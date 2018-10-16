@@ -54,8 +54,8 @@ public class PersonalInfoValidation {
 	
 	} public static String phoneNumber(Scanner scnr, String phoneNumber) {
 		boolean isValid = false;
-		String phoneNumber1 = 0;
-		phoneNumber1 = scnr.nextInt();
+		String phoneNumber1 = "0";
+		phoneNumber1 = scnr.nextLine();
 		String regex = "\\d{3}-\\d{3}-\\d{4}";
 		boolean answer3 = phoneNumber1.matches(regex);
 		System.out.println("Please enter a phone number!");
